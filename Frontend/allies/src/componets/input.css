@@ -1,0 +1,74 @@
+.labels{
+    font-weight: 650;
+    font-size: large;
+}
+
+.input-space{
+    background-color: #D9D9D9;
+}
+
+.gender-border{
+    background-color: #D9D9D9;
+    
+    padding: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+
+
+
+.print-button {
+    background-color: #10cc36;
+    color: black;
+    text-align: center;
+    font-weight: 700;
+    width: 150px;
+    height: 40px;
+    border: none;
+   
+}
+
+.print-button:hover {
+    background-color:  #10cc36; /* Set the same background color as the normal state */
+}
+
+.print-button:active {
+    background-color:  #10cc36;
+}
+
+.dark-background {
+    background-color: #333; /* Replace with the color of your choice */
+    color: #666363; /* Change the text color to make it visible on the dark background */
+    padding: 50px;
+  }
+
+  .output-box{
+    background-color:  #222222;
+    color: aliceblue;
+   
+  }
+
+  .Centered-model{
+    background-color:   #333;
+
+
+  }
+
+  .close-button{
+    background-color: #10cc36;
+    color: black;
+    text-align: center;
+    font-weight: 700;
+    width: 150px;
+    height: 40px;
+    border: none;
+
+  }
+  .close-button:hover {
+    background-color:  #10cc36; /* Set the same background color as the normal state */
+}
+
+.close-button:active {
+    background-color:  #10cc36;
+}
