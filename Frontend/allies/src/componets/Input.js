@@ -18,6 +18,8 @@ axios.defaults.xsrfCookieName = "csrftoken";
 
 let result;
 
+//Updated
+
 function MyVerticallyCenteredModal(props) {
   return (
     <Modal
@@ -35,7 +37,7 @@ function MyVerticallyCenteredModal(props) {
         </Modal.Body>
         <Modal.Footer>
           <Button onClick={props.onHide} className="close-button">
-            print
+            Close
           </Button>
         </Modal.Footer>
       </div>

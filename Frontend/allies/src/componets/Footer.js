@@ -11,7 +11,7 @@ import { AiOutlineTwitter } from 'react-icons/ai';
 import { BsGithub } from 'react-icons/bs';
 import { AiFillInstagram } from 'react-icons/ai';
 
-
+//No any changes
 
 const Footer = () => {
     return (
@@ -52,8 +52,8 @@ const Footer = () => {
 
 
                 <div>
-                    <p>Copyright ©2021 All rights reserved | This website is made with &#9829; by allies_security</p>
-                    <h4>message</h4>
+                    <p>Copyright ©2023 All rights reserved | This website is made with &#9829; by ALLIES</p>
+                    <h4>message---5</h4>
                 </div>
 
             </Row>
