@@ -24,6 +24,9 @@ function MyVerticallyCenteredModal(props) {
     if (result == "Fraud") {
       clr = "red";
       return result;
+    }else if (result == "Invalid Input!") {
+      clr = "#c2ad0e";
+      return result;
     } else {
       clr = "#10cc36";
       return result;
@@ -79,8 +82,8 @@ const Input = () => {
     setModalShow(true);
   };
 
-  const [maleChecked, setMaleChecked] = useState(false);
-  const [femaleChecked, setFemaleChecked] = useState(false);
+  const [maleChecked, setMaleChecked] = useState('');
+  const [femaleChecked, setFemaleChecked] = useState('');
 
   const handleMaleCheck = () => {
     setMaleChecked(true);

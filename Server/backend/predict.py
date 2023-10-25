@@ -1,6 +1,5 @@
 import numpy as np
 import pickle
-from sklearn.preprocessing import StandardScaler
 
 import warnings
 warnings.filterwarnings('ignore')
@@ -17,7 +16,7 @@ class modelPredict():
         lst[0] = float(data['amt'])
         lst[1] = int(data['trans_hour'])
         lst[int(data['category'])+1] = 1
-        if data['genderMale'] == 'true':
+        if data['genderMale'] == True:
             lst[17] == 1
         else:
             lst[16] == 1
