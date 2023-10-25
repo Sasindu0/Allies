@@ -17,10 +17,19 @@ axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";
 axios.defaults.xsrfCookieName = "csrftoken";
 
 let result;
-
-//Updated
+let clr;
 
 function MyVerticallyCenteredModal(props) {
+  function colorChange() {
+    if (result == "Fraud") {
+      clr = "red";
+      return result;
+    } else {
+      clr = "#10cc36";
+      return result;
+    }
+  }
+
   return (
     <Modal
       {...props}
@@ -32,8 +41,8 @@ function MyVerticallyCenteredModal(props) {
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">Result</Modal.Title>
         </Modal.Header>
-        <Modal.Body className="Centered-model">
-          <h4>{result}</h4>
+        <Modal.Body className="Centered-model" align="center">
+          <h4 style={{ color: clr }}>{colorChange()}</h4>
         </Modal.Body>
         <Modal.Footer>
           <Button onClick={props.onHide} className="close-button">
@@ -67,9 +76,6 @@ const Input = () => {
     });
 
     result = data;
-
-    console.log(data);
-
     setModalShow(true);
   };
 
