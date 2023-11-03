@@ -1,20 +1,22 @@
-from django.shortcuts import render
 from rest_framework.views import APIView
-""" from . models import * """
-""" from . serializer import * """
 from rest_framework.response import Response
-from django.http import HttpResponse
-
 from . predict import *
 
-# Create your views here.
 
 class home(APIView):
     def post(self, request):
-        
-        result = modelPredict.dataProcess(request)
 
-        #print(type(result))
+        data = request.data
+        try:
+            if data['amt'] == '' or data['amt'] == '' or data['trans_hour'] == '' or data['category'] == '' or data['genderMale'] == '' or data['age'] == '' or data['genderMale'] == '':
+                result = 'Invalid Input!'
+                return Response(result)
+            else:
+                result = modelPredict.dataProcess(request)
+                return Response(result)
+        except:
+            result = 'Invalid Input!'
+            return Response(result)
 
-        return Response(result)
+
         
