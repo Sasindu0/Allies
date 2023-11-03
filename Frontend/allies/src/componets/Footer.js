@@ -11,54 +11,72 @@ import { AiOutlineTwitter } from 'react-icons/ai';
 import { BsGithub } from 'react-icons/bs';
 import { AiFillInstagram } from 'react-icons/ai';
 
+import './footer.css';
+
 //No any changes
 
 const Footer = () => {
     return (
 
-        <Container fluid>
+        <Container fluid className="container-background">
             <Row>
                 <Col>
                     <NavLink to="/" className="navbar-brand" activeClassName="active">
-                        <img className='logo' src=".\img\logo.png" alt="logo" width="75" height="50" />
+                        <img className='logo' src=".\img\logo.png" alt="logo" width="150px" height="100px" />
                     </NavLink>
                 </Col>
 
                 <Col>
-                    <ul class="nav justify-content-center">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Active</a>
+                    <ul class="nav justify-content-center tabs">
+
+                        <li className="link">
+                            <NavLink to="/" exact >Home</NavLink>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                        <li className="link">
+                            <NavLink to="/services">Services</NavLink>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                        <li className="link">
+                            <NavLink to="/about" >About</NavLink>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        <li className="link">
+                            <NavLink to="/contact"  >Contact</NavLink>
                         </li>
                     </ul>
+
                 </Col>
 
                 <Col>
-                    <Row >
-                        <a><FaFacebookF /></a>
-                        <a><AiOutlineTwitter /></a>
-                        <a><BsGithub /></a>
-                        <a><AiFillInstagram /></a>
+                    <Row className='text-md-end'>
+
+                        <ul className='list-inline social'>
+                            <li>
+                                <a className='social-icon ' ><FaFacebookF /></a>
+                                <a className='social-icon'><AiOutlineTwitter /></a>
+                                <a className='social-icon'><BsGithub /></a>
+                                <a className='social-icon'><AiFillInstagram /></a>
+
+
+
+                            </li>
+
+
+                        </ul>
                     </Row>
                 </Col>
 
 
-                <div>
-                    <p>Copyright ©2023 All rights reserved | This website is made with &#9829; by ALLIES</p>
-                    <h4>message---5</h4>
-                </div>
+
+
 
             </Row>
 
-        </Container>
+            <Row className="text-center">
+                <hr className="custom-hr" />
+                <p className='copyright'>Copyright © 2023 All rights reserved | This website is made with &#9829; by ALLIES</p>
+            </Row>
+
+
+        </Container >
 
     )
 }

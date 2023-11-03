@@ -13,7 +13,7 @@ const MyNavBar = () => {
                     <div className="d-flex justify-content-between w-100">
                         <div>
                             <NavLink to="/" className="navbar-brand" activeClassName="active">
-                                <img className='logo' src=".\img\logo.png" alt="logo" width="75" height="50" />
+                                <img className='logo' src=".\img\logo.png" alt="logo" width="100" height="75" />
                             </NavLink>
                         </div>
                         <div>
